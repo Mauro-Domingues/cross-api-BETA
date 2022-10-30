@@ -5,23 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon bin/server.js",
-    "cross": "node EnviromentConfig/config.js",
-    "migration:generate": "typeorm-ts-node-commonjs -d ./src/database/connection.js migration:generate ./src/migrations/default",
-    "migration:run": "typeorm-ts-node-commonjs -d ./src/database/connection.js migration:run"
+    "cross": "node EnviromentConfig/config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^8.5.1",
-    "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.10"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20",
     "shelljs": "^0.8.5"
   }
 }
