@@ -1,7 +1,7 @@
 import shell from 'shelljs'
 
 const [create] = process.argv.slice(2)
-const arg = process.argv.slice(4)
+const [arg] = process.argv.slice(4)
 const [upperEntityName] = process.argv.slice(3)
 let entityName = null
 
