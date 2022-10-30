@@ -1,6 +1,6 @@
 export function createController(arg, upperArg){
     const createNewController = `
-    import ${upperArg}Service from '../services/${upperArg}Service.js'
+    import { ${upperArg}Service } from '../services/${upperArg}Service.js'
     import jwt from 'jsonwebtoken'
     import { config } from 'dotenv'
     config()
