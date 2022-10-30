@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "cross": "node EnviromentConfig/config.js"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "shelljs": "^0.8.5"
   }
 }
