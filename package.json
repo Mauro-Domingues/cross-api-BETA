@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon bin/server.js",
-    "create:api": "node EnviromentConfig/createApi.js",
-    "create:entity": "node EnviromentConfig/createEntity.js",
+    "cross": "node EnviromentConfig/config.js",
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/database/connection.js migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/database/connection.js migration:run"
   },
@@ -22,6 +21,7 @@
     "typeorm": "^0.3.10"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "shelljs": "^0.8.5"
   }
 }

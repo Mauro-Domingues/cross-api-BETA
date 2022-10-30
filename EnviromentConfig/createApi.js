@@ -5,6 +5,7 @@ import { createConnection } from './templates/connection.js'
 import { createEnv } from './templates/env.js'
 import { createJWT } from './templates/jwt.js'
 import { createCors } from './templates/cors.js'
+import { createGitIgnore } from './templates/gitIgnore.js'
 
 const createApi = () => {
     const newServer = createServer()
@@ -13,6 +14,7 @@ const createApi = () => {
     const newEnv = createEnv()
     const newJWT = createJWT()
     const newCors = createCors()
+    const newGitIgnore = createGitIgnore()
     fs.mkdirSync('bin')
     fs.mkdirSync('src')
     fs.mkdirSync('src/controllers')
@@ -35,6 +37,10 @@ const createApi = () => {
         console.log("Conexão Criada")
     })
     fs.appendFile('.env', newEnv, (err) => {
+        if (err) throw err
+        console.log("Env Criado")
+    })
+    fs.appendFile('.gitignore', newGitIgnore, (err) => {
         if (err) throw err
         console.log("Env Criado")
     })
