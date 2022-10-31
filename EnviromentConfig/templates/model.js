@@ -3,7 +3,7 @@ export function createModel(arg, upperArg) {
 `import { Entity, Column, PrimaryGeneratedColumn, OneToOne, OneToMany, ManyToOne, ManyToMany, JoinColumn, JoinTable } from "typeorm"
 
 /** Para consultar os tipos de colunas:
- https://typeorm.io/entities#column-types */
+https://typeorm.io/entities#column-types */
 
 @Entity('${arg}')
 export class ${upperArg} {
