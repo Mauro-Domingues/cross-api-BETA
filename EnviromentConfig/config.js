@@ -19,7 +19,7 @@ if(create === 'make:api'){
     }
 }
 
-if (create !== undefined){
+if (create === undefined){
     const trace = '\\'
     console.log("")
     console.log(" /=============================================// LISTA DE COMANDOS " + trace + trace + "============================================" + trace)
