@@ -14,10 +14,10 @@ export function createModel(arg, upperArg) {
         // insira as colunas //
         //                   //
 
-        @column({ type: 'timestampz', onCreate: true })
+        @Column({ type: 'timestampz', onCreate: true })
         createdAt!: DateTime
 
-        @column({  type: 'timestampz', onCreate: true, onUpdate: true })
+        @Column({  type: 'timestampz', onCreate: true, onUpdate: true })
         updatedAt!: DateTime
 
         // Exemplos de relações sendo esse o principal
