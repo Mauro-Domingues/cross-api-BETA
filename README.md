@@ -13,16 +13,8 @@
 
 <img src="./example.png" style="width: 100%;">
     
-<h3>Criar a estrutura da api:</h3>
+<h3>Para ver os comandos digite:</h3>
 
-    npm run cross create:api
-    
-<h3>Para popular entidades:</h3>
-
-    npm run cross create:entity NomeDaEntidade
-
-<h3>Para popular entidades e criar seus respectivos controllers e arquivos de rotas:</h3>
-
-    npm run cross create:entity NomeDaEntidade c
+    npm run cross
 
 <h3>OBS. Isso é um proeto em fase beta e ainda não está 100% funcional pois o Model do TypeOrm é feito para trabalhar melhor com typescript, em breve uma versão completa baseada em typescrypt será feita e postada oficialmente :)</h3>

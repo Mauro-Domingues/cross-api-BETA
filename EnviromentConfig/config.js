@@ -18,21 +18,24 @@ if(create === 'make:api'){
         shell.exec(`node ./node_modules/api-template/EnviromentConfig/createEntity.js ${entityName}`)
     }
 }
-const trace = '\\'
-console.log("")
-console.log(" /=============================================// LISTA DE COMANDOS " + trace + trace + "============================================" + trace)
-console.log("|                                                                                                                  |")
-console.log("|                                                     make:api                                                     |")
-console.log("|                                                                                                                  |")
-console.log("|                                - É utilizado para gerar a estrutura da sua API                                   |")
-console.log("|                                                                                                                  |")
-console.log("|                                            make:entity nomeDaEntidade                                            |")
-console.log("|                                                                                                                  |")
-console.log("|                  - É utilizado para gerar a entidade, o repositório e o service da sua entidade                  |")
-console.log("|                                                                                                                  |")
-console.log("|                                           make:entity nomeDaEntidade c                                           |")
-console.log("|                                                                                                                  |")
-console.log("| - É utilizado para gerar a entidade, o repositório, o service, o controller e o arquivo de rotas da sua entidade |")
-console.log("|                                                                                                                  |")
-console.log(" " + trace + "=================================================================================================================/")
-console.log("")
+
+if (create !== undefined){
+    const trace = '\\'
+    console.log("")
+    console.log(" /=============================================// LISTA DE COMANDOS " + trace + trace + "============================================" + trace)
+    console.log("|                                                                                                                  |")
+    console.log("|                                                     make:api                                                     |")
+    console.log("|                                                                                                                  |")
+    console.log("|                                - É utilizado para gerar a estrutura da sua API                                   |")
+    console.log("|                                                                                                                  |")
+    console.log("|                                            make:entity nomeDaEntidade                                            |")
+    console.log("|                                                                                                                  |")
+    console.log("|                  - É utilizado para gerar a entidade, o repositório e o service da sua entidade                  |")
+    console.log("|                                                                                                                  |")
+    console.log("|                                           make:entity nomeDaEntidade c                                           |")
+    console.log("|                                                                                                                  |")
+    console.log("| - É utilizado para gerar a entidade, o repositório, o service, o controller e o arquivo de rotas da sua entidade |")
+    console.log("|                                                                                                                  |")
+    console.log(" " + trace + "=================================================================================================================/")
+    console.log("")
+}
