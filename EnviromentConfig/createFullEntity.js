@@ -13,7 +13,7 @@ const createFullEntity = () => {
     const newRepository = createRepository(entityName, upperEntityName)
     const newService = createService(entityName, upperEntityName)
     const newControler = createController(entityName, upperEntityName)
-    const newRoute = createRoute(upperEntityName)
+    const newRoute = createRoute(entityName ,upperEntityName)
     if (!fs.existsSync(`src/entities/${upperEntityName}.js`)) {
         fs.appendFile(`src/entities/${upperEntityName}.js`, newModel, (err) => {
             if (err) throw err
