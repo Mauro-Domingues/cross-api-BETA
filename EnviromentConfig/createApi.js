@@ -51,7 +51,7 @@ const createApi = () => {
     if (!fs.existsSync('.gitignore')) {
         fs.appendFile('.gitignore', newGitIgnore, (err) => {
             if (err) throw err
-            console.log("Env Criado")
+            console.log("Gitignore Criado")
         })
     }
     if (!fs.existsSync('src/middlewares/auth.js')) {
