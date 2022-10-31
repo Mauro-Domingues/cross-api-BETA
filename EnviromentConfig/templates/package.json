@@ -1,0 +1,17 @@
+{
+  "name": "nome-do-projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node bin/server.js",
+    "cross": "node ./node_modules/api-template/EnviromentConfig/config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "api-template": "github:Mauro-Domingues/my-api-framework"
+  }
+}
