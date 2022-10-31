@@ -15,41 +15,55 @@ const createApi = () => {
     const newJWT = createJWT()
     const newCors = createCors()
     const newGitIgnore = createGitIgnore()
-    fs.mkdirSync('bin')
-    fs.mkdirSync('src')
-    fs.mkdirSync('src/controllers')
-    fs.mkdirSync('src/database')
-    fs.mkdirSync('src/entities')
-    fs.mkdirSync('src/middlewares')
-    fs.mkdirSync('src/routes')
-    fs.mkdirSync('src/services')
-    fs.mkdirSync('src/database/repositories')
-    fs.appendFile('bin/server.js', newServer, (err) => {
-        if (err) throw err
-        console.log("Server Criado")
-    })
-    fs.appendFile('src/app.js', newApp, (err) => {
-        if (err) throw err
-        console.log("App Criado")
-    })
-    fs.appendFile('src/database/connection.js', newConnection, (err) => {
-        if (err) throw err
-        console.log("Conexão Criada")
-    })
-    fs.appendFile('.env', newEnv, (err) => {
-        if (err) throw err
-        console.log("Env Criado")
-    })
-    fs.appendFile('.gitignore', newGitIgnore, (err) => {
-        if (err) throw err
-        console.log("Env Criado")
-    })
-    fs.appendFile('src/middlewares/auth.js', newJWT, (err) => {
-        if (err) throw err
-        console.log("JWT Criado")
-    })
-    fs.appendFile('src/middlewares/cors.js', newCors, (err) => {
-        if (err) throw err
-        console.log("Cors Criado")
-    })
-};createApi()
+    if (!fs.existsSync('bin')) { fs.mkdirSync('bin') }
+    if (!fs.existsSync('src')) { fs.mkdirSync('src') }
+    if (!fs.existsSync('src/controllers')) { fs.mkdirSync('src/controllers') }
+    if (!fs.existsSync('src/database')) { fs.mkdirSync('src/database') }
+    if (!fs.existsSync('src/entities')) { fs.mkdirSync('src/entities') }
+    if (!fs.existsSync('src/middlewares')) { fs.mkdirSync('src/middlewares') }
+    if (!fs.existsSync('src/routes')) { fs.mkdirSync('src/routes') }
+    if (!fs.existsSync('src/services')) { fs.mkdirSync('src/services') }
+    if (!fs.existsSync('src/database/repositories')) { fs.mkdirSync('src/database/repositories') }
+    if (!fs.existsSync('bin/server.js')) {
+        fs.appendFile('bin/server.js', newServer, (err) => {
+            if (err) throw err
+            console.log("Server Criado")
+        })
+    }
+    if (!fs.existsSync('src/app.js')) {
+        fs.appendFile('src/app.js', newApp, (err) => {
+            if (err) throw err
+            console.log("App Criado")
+        })
+    }
+    if (!fs.existsSync('src/database/connection.js')) {
+        fs.appendFile('src/database/connection.js', newConnection, (err) => {
+            if (err) throw err
+            console.log("Conexão Criada")
+        })
+    }
+    if (!fs.existsSync('.env')) {
+        fs.appendFile('.env', newEnv, (err) => {
+            if (err) throw err
+            console.log("Env Criado")
+        })
+    }
+    if (!fs.existsSync('.gitignore')) {
+        fs.appendFile('.gitignore', newGitIgnore, (err) => {
+            if (err) throw err
+            console.log("Env Criado")
+        })
+    }
+    if (!fs.existsSync('src/middlewares/auth.js')) {
+        fs.appendFile('src/middlewares/auth.js', newJWT, (err) => {
+            if (err) throw err
+            console.log("JWT Criado")
+        })
+    }
+    if (!fs.existsSync('src/middlewares/cors.js')) {
+        fs.appendFile('src/middlewares/cors.js', newCors, (err) => {
+            if (err) throw err
+            console.log("Cors Criado")
+        })
+    }
+}; createApi()
