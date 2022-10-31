@@ -3,7 +3,6 @@ export function createService(arg, upperArg){
 `import { ${arg}Repository } from '../database/repositories/${arg}Repository.js'
 
 export class ${upperArg}Service{
-
     async get(relations){
         try{
             const ${arg} = await ${arg}Repository.find(relations)
