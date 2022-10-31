@@ -3,7 +3,7 @@ export function createModel(arg, upperArg) {
 `import { Entity, Column, PrimaryGeneratedColumn, OneToOne, OneToMany, ManyToOne, ManyToMany, JoinColumn, JoinTable } from "typeorm"
 
 /** Para consultar os tipos de colunas:
-https://github.com/typeorm/typeorm/blob/master/src/decorator/options/ColumnOptions.ts */
+ https://typeorm.io/entities#column-types */
 
 @Entity('${arg}')
 export class ${upperArg} {
@@ -14,10 +14,10 @@ export class ${upperArg} {
     // insira as colunas //
     //                   //
 
-    @Column({ type: 'timestampz', onCreate: true })
+    @Column({ type: 'timestamp' })
     createdAt!: DateTime
 
-    @Column({  type: 'timestampz', onCreate: true, onUpdate: true })
+    @Column({  type: 'timestamp', onUpdate: true })
     updatedAt!: DateTime
 
     // Exemplos de relações sendo esse o principal
