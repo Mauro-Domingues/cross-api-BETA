@@ -15,10 +15,10 @@ export class ${upperArg} {
     //                   //
 
     @Column({ type: 'timestamp' })
-    createdAt!: DateTime
+    createdAt!: dateTime
 
     @Column({  type: 'timestamp', onUpdate: true })
-    updatedAt!: DateTime
+    updatedAt!: datetime
 
     // Exemplos de relações sendo esse o principal
 
