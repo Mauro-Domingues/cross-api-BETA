@@ -5,13 +5,9 @@
 
     npm i https://github.com/Mauro-Domingues/my-api-framework.git -D
     
-<h3>Adicione esse script ao seu package.json:</h3>
+<h3>Digite o seguinte código no terminal para configurar o seu package.json:</h3>
 
-    "cross": "node ./node_modules/api-template/EnviromentConfig/config.js"
-
-<h3>Assim como na imagem:</h3>
-
-<img src="./example.png" style="width: 100%;">
+    node ./node_modules/api-template/EnviromentConfig/configJson.js
     
 <h3>Para ver os comandos digite:</h3>
 
