@@ -5,13 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node bin/server.js",
+    "dev": "nodemon bin/server.js",
     "cross": "node ./node_modules/api-template/EnviromentConfig/config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "typeorm": "^0.3.10"
+  },
   "devDependencies": {
-    "api-template": "github:Mauro-Domingues/my-api-framework"
+    "api-template": "github:Mauro-Domingues/my-api-framework",
+    "nodemon": "^2.0.20"
   }
 }
