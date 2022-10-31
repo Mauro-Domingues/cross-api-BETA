@@ -1,6 +1,6 @@
 export function createModel(arg, upperArg) {
     const createNewModel =
-`import { Entity, Column, PrimaryGeneratedColumn, DateTime, OneToOne, OneToMany, ManyToOne, ManyToMany, JoinColumn, JoinTable } from "typeorm"
+`import { Entity, Column, PrimaryGeneratedColumn, OneToOne, OneToMany, ManyToOne, ManyToMany, JoinColumn, JoinTable } from "typeorm"
 
 /** Para consultar os tipos de colunas:
 https://github.com/typeorm/typeorm/blob/master/src/decorator/options/ColumnOptions.ts */

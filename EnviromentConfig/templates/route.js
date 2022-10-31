@@ -1,7 +1,7 @@
 export function createRoute(arg){
     const createNewService =
 `import { Router } from 'express'
-import ${arg}Controller from '../controllers/${arg}Controller.js'
+import { ${arg}Controller } from '../controllers/${arg}Controller.js'
 
 const router = Router()
 const ${arg}Controller = new ${arg}Controller()
