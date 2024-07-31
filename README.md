@@ -13,4 +13,4 @@
 
     npm run cross
 
-<h3>OBS. Isso é um proeto em fase beta e ainda não está 100% funcional pois o Model do TypeOrm é feito para trabalhar melhor com typescript, em breve uma versão completa baseada em typescrypt será feita e postada oficialmente :)</h3>
+<h3>OBS. Isso é um projeto em fase beta e ainda não está 100% funcional pois o Model do TypeOrm é feito para trabalhar melhor com typescript, em breve uma versão completa baseada em typescrypt será feita e postada oficialmente :)</h3>
