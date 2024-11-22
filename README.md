@@ -25,7 +25,7 @@ No lines of code, or functionality have changed. Despite being in the beta phase
 <h1>Um template de uma api que eu fiz por diversão</h1>
 <h3>Para baixar o projeto:</h3>
 
-    npm i https://github.com/Mauro-Domingues/my-api-framework.git -D
+    npm i https://github.com/Mauro-Domingues/cross-api-BETA -D
     
 <h3>Digite o seguinte código no terminal para configurar o seu package.json:</h3>
 
